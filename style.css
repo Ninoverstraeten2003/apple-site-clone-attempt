@@ -1,0 +1,157 @@
+/* CSS HEX */
+:root {
+	--onyx: #424245ff;
+	--gray: #808080;
+	--jet: #333333ff;
+	--raisin-black: #333333;
+	--dogwood-rose: #ca2266ff;
+	--liberty: #4c5cb0ff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+	font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
+		"Helvetica", "Arial", sans-serif;
+
+
+}
+
+p,
+a {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.column {
+	margin: 0 2rem;
+	font-weight: 600;
+}
+.column h2 {
+	font-size: 40px;
+	width: 90%;
+}
+.column p {
+	font-size: 24px;
+	font-weight: 400;
+	width: 80%;
+	margin-top: 1rem;
+}
+.column a {
+	font-size: 24px;
+	color: #1371CF;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+html {
+	height: 100%;
+}
+
+.search {
+	width: 16px;
+}
+.navbar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	gap: 1.5rem;
+	height: 44px;
+
+	margin: 0 auto;
+	max-width: 980px;
+	padding: 0 22px;
+}
+
+.redirect {
+	height: 44px;
+}
+
+.segmentbar *:hover,
+*:focus {
+	text-decoration: underline;
+}
+
+.segmentbar {
+	height: 100%;
+	margin: 0 auto;
+	max-width: 980px;
+	padding: 0 22px;
+
+	display: flex;
+	gap: 1rem;
+}
+.segmentbar > span {
+	display: flex;
+	align-items: center;
+}
+.segmentbar > a {
+	display: flex;
+	align-items: center;
+}
+
+.raisin-black {
+	background-color: var(--raisin-black);
+}
+.grey {
+	background-color: var(--onyx);
+}
+
+.navbar *, .segmentbar * {
+	opacity: 0.8;
+	white-space: nowrap;
+	color: white;
+}
+.navbar > li {
+	height: 100%;
+}
+
+li > a,
+img {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.row img {
+	width: 380px;
+	padding: 2rem 0;
+}
+
+.navbar *:hover,
+*:focus {
+	opacity: 1;
+	transition: all 0.3s ease-in;
+}
+
+.navbar img {
+	display: block;
+}
+
+.row {
+	display: flex;
+	background-color: #F5F5F7;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section {
+	max-width: 1070px;
+	margin: auto;
+}
+.left {
+	width: 50%;
+}
+.row-image {
+	width: 50%;
+}
+
