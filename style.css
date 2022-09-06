@@ -1,7 +1,8 @@
 /* CSS HEX */
+
 :root {
 	--onyx: #424245ff;
-	--gray: #808080;
+	--grey: #808080;
 	--jet: #333333ff;
 	--raisin-black: #333333;
 	--dogwood-rose: #ca2266ff;
@@ -15,10 +16,8 @@
 	text-decoration: none;
 	list-style-type: none;
 	color: black;
-	font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
+	font-family: "SF Pro", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
 		"Helvetica", "Arial", sans-serif;
-
-
 }
 
 p,
@@ -43,7 +42,7 @@ a {
 }
 .column a {
 	font-size: 24px;
-	color: #1371CF;
+	color: #1371cf;
 	display: inline-block;
 	margin-top: 1rem;
 }
@@ -103,7 +102,8 @@ html {
 	background-color: var(--onyx);
 }
 
-.navbar *, .segmentbar * {
+.navbar *,
+.segmentbar * {
 	opacity: 0.8;
 	white-space: nowrap;
 	color: white;
@@ -136,7 +136,7 @@ img {
 
 .row {
 	display: flex;
-	background-color: #F5F5F7;
+	background-color: #f5f5f7;
 }
 .center {
 	display: flex;
@@ -155,3 +155,67 @@ img {
 	width: 50%;
 }
 
+.banner {
+	margin: auto;
+	max-width: 945px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	gap: 2rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.banner h1 {
+	font-size: 48px;
+	font-weight: 600;
+	max-width: 745px;
+	margin: auto;
+	text-align: center;
+}
+.banner p {
+	font-size: 21px;
+	text-align: center;
+}
+
+.title-laptops {
+	max-width: 945px;
+	margin: auto;
+	padding: 5rem 0;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.title-laptops h2 {
+	font-size: 40px;
+	font-weight: 600;
+}
+.title-laptops p {
+	font-size: 17px;
+}
+.grid {
+	display: grid;
+	max-width: 1080px;
+	margin: auto;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+.laptop {
+	background-color: #f5f5f7;
+}
+.laptop-title,
+.laptop-price {
+	text-align: center;
+	font-size: 14px;
+}
+.laptop-title {
+	font-weight: 600;
+}
+.laptop-price {
+	font-weight: 400;
+}
+
+.laptop img {
+	width: 100%;
+}
