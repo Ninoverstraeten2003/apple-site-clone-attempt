@@ -204,18 +204,27 @@ img {
 .laptop {
 	background-color: #f5f5f7;
 }
-.laptop-title,
-.laptop-price {
+
+.laptop-title p {
 	text-align: center;
 	font-size: 14px;
-}
-.laptop-title {
 	font-weight: 600;
+	padding: 2rem;
 }
-.laptop-price {
+.laptop-price p {
+	text-align: center;
+	font-size: 14px;
 	font-weight: 400;
+	padding: 2rem;
 }
 
 .laptop img {
 	width: 100%;
+}
+.laptop {
+	border-radius: 10px;
+}
+
+.laptop:hover > div:nth-child(2) > p {
+	color: #4790d8;
 }
